@@ -28,7 +28,7 @@ namespace IdentityTodo {
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options =>
-                    options.SignIn.RequireConfirmedAccount = false)
+                    options.SignIn.RequireConfirmedAccount = false)// to allow immediate login
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
         }
